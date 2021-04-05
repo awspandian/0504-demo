@@ -9,4 +9,4 @@ this line changed from repo
 this commit don to chec the author name
 
 
-this commit to check the -a option
+this commit to check the -a optiontesting the log oneline
