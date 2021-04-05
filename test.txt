@@ -10,3 +10,5 @@ this commit don to chec the author name
 
 
 this commit to check the -a optiontesting the log oneline
+
+testing the fetch commadn
