@@ -1,0 +1,9 @@
+---
+- hosts: centos
+  user: ansible
+  become: true
+  tasks:
+    - name: configure a MOTD (Message of the Day)
+      copy:
+        content: using playbook copying the content
+        dest: /etc/motd

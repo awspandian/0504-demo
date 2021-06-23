@@ -1,0 +1,16 @@
+---
+- hosts: centos
+  user: ansible
+  become: true
+  vars:
+    motd: " print welcome message using vars \n"
+  tasks:
+    - name: configure a MOTD (Message of the Day)
+      copy:
+        content: "{{ motd }}"
+        dest: /etc/motd
+      notify: MOTD changed
+  handlers:
+    - name: MOTD changed
+      debug:
+        msg: The MOTD was changed
